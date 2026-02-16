@@ -1,0 +1,338 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Servertest\\playwright-test\\playwright.config.js",
+    "rootDir": "C:/Users/Servertest/playwright-test/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Servertest/playwright-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Servertest/playwright-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Servertest/playwright-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Servertest/playwright-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Servertest/playwright-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Servertest/playwright-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Servertest/playwright-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/Users/Servertest/playwright-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Servertest/playwright-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "C:/Users/Servertest/playwright-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "specs\\test-appointment.spec.js",
+      "file": "specs/test-appointment.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TVS Engineering Test Appointment Form",
+          "file": "specs/test-appointment.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Complete test appointment form successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 43759,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📅 Starting test appointment form...\n"
+                        },
+                        {
+                          "text": "🌐 Step 1: Navigating to test appointment page...\n"
+                        },
+                        {
+                          "text": "✅ Navigated to: https://tvsengineering.com/en/test-appointment/\n"
+                        },
+                        {
+                          "text": "📋 Step 2: Selecting job type - Diagnose...\n"
+                        },
+                        {
+                          "text": "📋 Step 2b: Handling modal...\n"
+                        },
+                        {
+                          "text": "✅ Modal \"Ik begrijp het\" closed\n"
+                        },
+                        {
+                          "text": "➡️ Step 3: Going to Planning step...\n"
+                        },
+                        {
+                          "text": "📅 Step 4: Selecting planning option - Snelst...\n"
+                        },
+                        {
+                          "text": "📅 Step 4b: Handling planning modal...\n"
+                        },
+                        {
+                          "text": "✅ Planning modal handled - clicked \"Doorgaan\"\n"
+                        },
+                        {
+                          "text": "➡️ Step 5: Going to Contact step...\n"
+                        },
+                        {
+                          "text": "📱 Step 6: Filling contact information...\n"
+                        },
+                        {
+                          "text": "📱 Step 6b: Validating phone number...\n"
+                        },
+                        {
+                          "text": "✅ Phone validated - fields auto-filled\n"
+                        },
+                        {
+                          "text": "✅ Contact info auto-filled\n"
+                        },
+                        {
+                          "text": "➡️ Step 7: Going to Preferences step...\n"
+                        },
+                        {
+                          "text": "⚙️ Step 8: Filling preferences...\n"
+                        },
+                        {
+                          "text": "⚙️ Step 8b: Handling remote diagnosis modal...\n"
+                        },
+                        {
+                          "text": "✅ Remote diagnosis modal handled - clicked \"Nee bedankt\"\n"
+                        },
+                        {
+                          "text": "➡️ Step 9: Going to Vehicle step...\n"
+                        },
+                        {
+                          "text": "🚗 Step 10: Filling vehicle information...\n"
+                        },
+                        {
+                          "text": "🚗 Step 10b: Selecting not at TVS...\n"
+                        },
+                        {
+                          "text": "🚗 Step 10c: Selecting no rental car...\n"
+                        },
+                        {
+                          "text": "➡️ Step 11: Going to Driving Problems step...\n"
+                        },
+                        {
+                          "text": "🔧 Step 12: Answering driving problems - Nee...\n"
+                        },
+                        {
+                          "text": "➡️ Step 13: Going to Sounds step...\n"
+                        },
+                        {
+                          "text": "🔊 Step 14: Answering sounds - Ja...\n"
+                        },
+                        {
+                          "text": "🔊 Step 14b: Selecting sound options: 1, 3, 4...\n"
+                        },
+                        {
+                          "text": "✅ Sound options selected\n"
+                        },
+                        {
+                          "text": "➡️ Step 15: Going to Vibrations step...\n"
+                        },
+                        {
+                          "text": "📳 Step 16: Answering vibrations - Nee...\n"
+                        },
+                        {
+                          "text": "➡️ Step 17: Going to Dashboard step...\n"
+                        },
+                        {
+                          "text": "📊 Step 18: Answering dashboard - Nee...\n"
+                        },
+                        {
+                          "text": "➡️ Step 19: Going to Confirmation step...\n"
+                        },
+                        {
+                          "text": "📜 Step 20: Accepting terms and conditions...\n"
+                        },
+                        {
+                          "text": "✅ Step 21: Verifying submission...\n"
+                        },
+                        {
+                          "text": "🚀 Step 22: Submitting form...\n"
+                        },
+                        {
+                          "text": "✅ Step 23: Verifying success message...\n"
+                        },
+                        {
+                          "text": "🎉 Test appointment form completed successfully!\n"
+                        },
+                        {
+                          "text": "📋 Summary:\n"
+                        },
+                        {
+                          "text": "   - Job: Diagnose\n"
+                        },
+                        {
+                          "text": "   - Planning: Snelst\n"
+                        },
+                        {
+                          "text": "   - Phone: 3012345678\n"
+                        },
+                        {
+                          "text": "   - Email: test@example.com\n"
+                        },
+                        {
+                          "text": "   - Vehicle: ABC-123 (50000 km)\n"
+                        },
+                        {
+                          "text": "   - Sound issues: Yes (3 options selected)\n"
+                        },
+                        {
+                          "text": "   - Vibration issues: No\n"
+                        },
+                        {
+                          "text": "   - Dashboard issues: No\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-16T21:11:50.873Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08bf8f3086cd4188bfb6-4e2334a2d14f2232e46f",
+              "file": "specs/test-appointment.spec.js",
+              "line": 28,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-16T21:11:49.690Z",
+    "duration": 45121.532,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
