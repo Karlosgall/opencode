@@ -1,0 +1,8 @@
+{
+"mcp":{
+"playwright":{
+	"type":local,
+	"command":["npx","@playwright/@mcp@latest"]
+		}
+       }
+}
