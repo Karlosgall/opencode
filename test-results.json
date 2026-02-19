@@ -130,21 +130,21 @@
   },
   "suites": [
     {
-      "title": "specs\\test-appointment.spec.js",
-      "file": "specs/test-appointment.spec.js",
+      "title": "specs\\reparatie-fixed-date.spec.js",
+      "file": "specs/reparatie-fixed-date.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "TVS Engineering Test Appointment Form",
-          "file": "specs/test-appointment.spec.js",
+          "title": "TVS Engineering Test Appointment Form - Reparatie Fixed Date",
+          "file": "specs/reparatie-fixed-date.spec.js",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "Complete test appointment form successfully",
-              "ok": true,
+              "title": "Complete test appointment form with Reparatie and fixed date",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -155,14 +155,33 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 43759,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 31370,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Volgende' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" class=\"px-5 py-2.5 rounded-xl text-white shadow-sm transition active:scale-[.99] bg-slate-300 cursor-not-allowed\">Volgende</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Volgende' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" class=\"px-5 py-2.5 rounded-xl text-white shadow-sm transition active:scale-[.99] bg-slate-300 cursor-not-allowed\">Volgende</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\Servertest\\playwright-test\\tests\\specs\\reparatie-fixed-date.spec.js:109:58",
+                        "location": {
+                          "file": "C:\\Users\\Servertest\\playwright-test\\tests\\specs\\reparatie-fixed-date.spec.js",
+                          "column": 58,
+                          "line": 109
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 107 |\u001b[39m     \u001b[90m// Step 8: Click Volgende to go to Preferences\u001b[39m\n \u001b[90m 108 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'➡️ Step 8: Going to Preferences step...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Volgende'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m\n \u001b[90m 112 |\u001b[39m     \u001b[90m// Step 9: Fill Preferences\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Servertest\\playwright-test\\tests\\specs\\reparatie-fixed-date.spec.js",
+                            "column": 58,
+                            "line": 109
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Volgende' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" class=\"px-5 py-2.5 rounded-xl text-white shadow-sm transition active:scale-[.99] bg-slate-300 cursor-not-allowed\">Volgende</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 107 |\u001b[39m     \u001b[90m// Step 8: Click Volgende to go to Preferences\u001b[39m\n \u001b[90m 108 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'➡️ Step 8: Going to Preferences step...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Volgende'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m\n \u001b[90m 112 |\u001b[39m     \u001b[90m// Step 9: Fill Preferences\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Servertest\\playwright-test\\tests\\specs\\reparatie-fixed-date.spec.js:109:58\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
-                          "text": "📅 Starting test appointment form...\n"
+                          "text": "📅 Starting test appointment form - Reparatie Fixed Date...\n"
                         },
                         {
                           "text": "🌐 Step 1: Navigating to test appointment page...\n"
@@ -171,10 +190,10 @@
                           "text": "✅ Navigated to: https://tvsengineering.com/en/test-appointment/\n"
                         },
                         {
-                          "text": "📋 Step 2: Selecting job type - Diagnose...\n"
+                          "text": "📋 Step 2: Selecting job type - Reparatie...\n"
                         },
                         {
-                          "text": "📋 Step 2b: Handling modal...\n"
+                          "text": "📋 Step 2b: Handling modal \"Ik begrijp het\"...\n"
                         },
                         {
                           "text": "✅ Modal \"Ik begrijp het\" closed\n"
@@ -183,142 +202,66 @@
                           "text": "➡️ Step 3: Going to Planning step...\n"
                         },
                         {
-                          "text": "📅 Step 4: Selecting planning option - Snelst...\n"
+                          "text": "📅 Step 4: Selecting planning option - Gepland...\n"
                         },
                         {
-                          "text": "📅 Step 4b: Handling planning modal...\n"
+                          "text": "📅 Step 5: Selecting date 27-02-2026...\n"
                         },
                         {
-                          "text": "✅ Planning modal handled - clicked \"Doorgaan\"\n"
+                          "text": "✅ Date selected: 27-02-2026\n"
                         },
                         {
-                          "text": "➡️ Step 5: Going to Contact step...\n"
+                          "text": "➡️ Step 6: Going to Contact step...\n"
                         },
                         {
-                          "text": "📱 Step 6: Filling contact information...\n"
+                          "text": "📱 Step 7: Filling contact information...\n"
                         },
                         {
-                          "text": "📱 Step 6b: Validating phone number...\n"
+                          "text": "✅ Contact info filled\n"
                         },
                         {
-                          "text": "✅ Phone validated - fields auto-filled\n"
-                        },
-                        {
-                          "text": "✅ Contact info auto-filled\n"
-                        },
-                        {
-                          "text": "➡️ Step 7: Going to Preferences step...\n"
-                        },
-                        {
-                          "text": "⚙️ Step 8: Filling preferences...\n"
-                        },
-                        {
-                          "text": "⚙️ Step 8b: Handling remote diagnosis modal...\n"
-                        },
-                        {
-                          "text": "✅ Remote diagnosis modal handled - clicked \"Nee bedankt\"\n"
-                        },
-                        {
-                          "text": "➡️ Step 9: Going to Vehicle step...\n"
-                        },
-                        {
-                          "text": "🚗 Step 10: Filling vehicle information...\n"
-                        },
-                        {
-                          "text": "🚗 Step 10b: Selecting not at TVS...\n"
-                        },
-                        {
-                          "text": "🚗 Step 10c: Selecting no rental car...\n"
-                        },
-                        {
-                          "text": "➡️ Step 11: Going to Driving Problems step...\n"
-                        },
-                        {
-                          "text": "🔧 Step 12: Answering driving problems - Nee...\n"
-                        },
-                        {
-                          "text": "➡️ Step 13: Going to Sounds step...\n"
-                        },
-                        {
-                          "text": "🔊 Step 14: Answering sounds - Ja...\n"
-                        },
-                        {
-                          "text": "🔊 Step 14b: Selecting sound options: 1, 3, 4...\n"
-                        },
-                        {
-                          "text": "✅ Sound options selected\n"
-                        },
-                        {
-                          "text": "➡️ Step 15: Going to Vibrations step...\n"
-                        },
-                        {
-                          "text": "📳 Step 16: Answering vibrations - Nee...\n"
-                        },
-                        {
-                          "text": "➡️ Step 17: Going to Dashboard step...\n"
-                        },
-                        {
-                          "text": "📊 Step 18: Answering dashboard - Nee...\n"
-                        },
-                        {
-                          "text": "➡️ Step 19: Going to Confirmation step...\n"
-                        },
-                        {
-                          "text": "📜 Step 20: Accepting terms and conditions...\n"
-                        },
-                        {
-                          "text": "✅ Step 21: Verifying submission...\n"
-                        },
-                        {
-                          "text": "🚀 Step 22: Submitting form...\n"
-                        },
-                        {
-                          "text": "✅ Step 23: Verifying success message...\n"
-                        },
-                        {
-                          "text": "🎉 Test appointment form completed successfully!\n"
-                        },
-                        {
-                          "text": "📋 Summary:\n"
-                        },
-                        {
-                          "text": "   - Job: Diagnose\n"
-                        },
-                        {
-                          "text": "   - Planning: Snelst\n"
-                        },
-                        {
-                          "text": "   - Phone: 3012345678\n"
-                        },
-                        {
-                          "text": "   - Email: test@example.com\n"
-                        },
-                        {
-                          "text": "   - Vehicle: ABC-123 (50000 km)\n"
-                        },
-                        {
-                          "text": "   - Sound issues: Yes (3 options selected)\n"
-                        },
-                        {
-                          "text": "   - Vibration issues: No\n"
-                        },
-                        {
-                          "text": "   - Dashboard issues: No\n"
+                          "text": "➡️ Step 8: Going to Preferences step...\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-16T21:11:50.873Z",
+                      "startTime": "2026-02-19T14:08:53.838Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Servertest\\playwright-test\\test-results\\specs-reparatie-fixed-date-b8656-th-Reparatie-and-fixed-date-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Servertest\\playwright-test\\test-results\\specs-reparatie-fixed-date-b8656-th-Reparatie-and-fixed-date-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Servertest\\playwright-test\\test-results\\specs-reparatie-fixed-date-b8656-th-Reparatie-and-fixed-date-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Servertest\\playwright-test\\test-results\\specs-reparatie-fixed-date-b8656-th-Reparatie-and-fixed-date-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Servertest\\playwright-test\\tests\\specs\\reparatie-fixed-date.spec.js",
+                        "column": 58,
+                        "line": 109
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "08bf8f3086cd4188bfb6-4e2334a2d14f2232e46f",
-              "file": "specs/test-appointment.spec.js",
-              "line": 28,
+              "id": "7ebf164d66578fc84e83-18d5dd6b5147313a5696",
+              "file": "specs/reparatie-fixed-date.spec.js",
+              "line": 29,
               "column": 7
             }
           ]
@@ -328,11 +271,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-16T21:11:49.690Z",
-    "duration": 45121.532,
-    "expected": 1,
+    "startTime": "2026-02-19T14:08:51.765Z",
+    "duration": 34083.563999999955,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
