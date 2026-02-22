@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('TVS Engineering Test Appointment Form', () => {
+test.describe('TVS Engineering Test Appointment Form - Vaste Datum', () => {
   const testData = {
     job: 'Diagnose',
-    planning: 'Snelst',
-    phone: '3015363880',
+    planning: 'Vaste datum',
+    phone: '3012345678',
     email: 'test@example.com',
     address: 'Test Street 123',
     postcode: '12345',
@@ -12,7 +12,7 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     language: 'English',
     customerType: 'Particulier',
     name: 'Test User',
-    plate: 'FEB-20-26',
+    plate: 'ABC-123',
     mileage: '50000',
     vin: '1HGBH41JXMN109186',
     atTvs: false,
@@ -20,15 +20,15 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     rentalCar: false,
     drivingProblems: false,
     hasSounds: true,
-    soundOptions: [1, 3, 4], // Ratelende, tijdens terugschakelen, tijdens afremmen
+    soundOptions: [1, 3, 4],
     vibrations: false,
     dashboard: false
   };
 
-  test('Complete test appointment form successfully', async ({ page }) => {
+  test('Complete test appointment form with fixed date', async ({ page }) => {
     test.setTimeout(90000);
 
-    console.log('📅 Starting test appointment form...');
+    console.log('📅 Starting test appointment form (Vaste Datum)...');
 
     // Step 1: Navigate to page
     console.log('🌐 Step 1: Navigating to test appointment page...');
@@ -59,18 +59,37 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     await page.getByRole('button', { name: 'Volgende' }).click();
     await page.waitForTimeout(1500);
 
-    // Step 4: Select Planning option (Snelst)
-    console.log('📅 Step 4: Selecting planning option - Snelst...');
-    await page.getByRole('button', { name: /Snelst/ }).click();
-    await page.waitForTimeout(1000);
+    // Step 4: Select Planning option - Vaste datum (Fixed date)
+    console.log('📅 Step 4: Selecting planning option - Vaste datum...');
+    await page.getByRole('button', { name: /Gepland/ }).click();
+    await page.waitForTimeout(2000);
 
-    // Handle modal: "Doorgaan" (inleveren binnen 2 dagen)
-    console.log('📅 Step 4b: Handling planning modal...');
+    // Step 4b: Select an available date from the calendar
+    console.log('📅 Step 4b: Selecting available date from calendar...');
+    try {
+      // Click on date textbox to open calendar if not already open
+      const dateInput = page.getByRole('textbox', { name: /Selecteer een datum/ });
+      await dateInput.click({ force: true });
+      await page.waitForTimeout(1500);
+      
+      // Click on a day with cursor=pointer (available days like 23, 24, 25, 26, 27)
+      const availableDay = page.locator('text="23"').first();
+      if (await availableDay.isVisible({ timeout: 3000 })) {
+        await availableDay.click({ force: true });
+        await page.waitForTimeout(1500);
+        console.log('✅ Date 23 selected from calendar');
+      }
+    } catch (e) {
+      console.log('⚠️ Calendar selection may have failed, continuing...');
+    }
+
+    // Handle modal: "Doorgaan" if appears
+    console.log('📅 Step 4c: Handling any modal...');
     try {
       const doorgaan = page.locator('text=Doorgaan').first();
       if (await doorgaan.isVisible({ timeout: 3000 })) {
         await doorgaan.click();
-        console.log('✅ Planning modal handled - clicked "Doorgaan"');
+        console.log('✅ Modal handled - clicked "Doorgaan"');
       }
     } catch (e) {}
     await page.waitForTimeout(1000);
@@ -82,10 +101,9 @@ test.describe('TVS Engineering Test Appointment Form', () => {
 
     // Step 6: Fill Contact info
     console.log('📱 Step 6: Filling contact information...');
-    // Phone number
     await page.locator('input[type="tel"], input[placeholder*="6"]').first().fill(testData.phone);
     await page.waitForTimeout(500);
-    // Click Controleren button to validate phone
+    
     console.log('📱 Step 6b: Validating phone number...');
     try {
       const checkBtn = page.locator('button:has-text("Controleren")');
@@ -96,7 +114,6 @@ test.describe('TVS Engineering Test Appointment Form', () => {
       }
     } catch (e) {}
 
-    // Fields are auto-filled after phone validation, just verify they're filled
     await page.waitForTimeout(1000);
     console.log('✅ Contact info auto-filled');
 
@@ -110,7 +127,6 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     await page.getByLabel('Klanttype').selectOption(testData.customerType);
     await page.waitForTimeout(1000);
 
-    // Check if name field needs to be filled (might be auto-filled from phone)
     const nameField = page.getByRole('textbox', { name: /Naam/ });
     const nameValue = await nameField.inputValue();
     if (!nameValue || nameValue === '') {
@@ -141,12 +157,10 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     await page.getByRole('textbox', { name: /VIN/ }).fill(testData.vin);
     await page.waitForTimeout(2000);
 
-    // Select "No" for at TVS
     console.log('🚗 Step 10b: Selecting not at TVS...');
     await page.getByRole('button', { name: 'Nee' }).first().click();
     await page.waitForTimeout(1000);
 
-    // Select "No" for rental car
     console.log('🚗 Step 10c: Selecting no rental car...');
     await page.getByRole('button', { name: 'Nee' }).nth(1).click();
     await page.waitForTimeout(1000);
@@ -173,13 +187,10 @@ test.describe('TVS Engineering Test Appointment Form', () => {
 
     // Select sound options: 1, 3, 4
     console.log('🔊 Step 14b: Selecting sound options: 1, 3, 4...');
-    // Option 1: Ratelende/tikkende/krassende geluiden
     await page.getByRole('button', { name: /Ratelende/ }).click();
     await page.waitForTimeout(500);
-    // Option 3: Bijgeluiden tijdens terugschakelen
     await page.getByRole('button', { name: /terugschakelen/ }).click();
     await page.waitForTimeout(500);
-    // Option 4: Bijgeluiden tijdens afremmen
     await page.getByRole('button', { name: /afremmen/ }).click();
     await page.waitForTimeout(500);
     console.log('✅ Sound options selected');
@@ -229,10 +240,10 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     const successMessage = page.locator('text=Uw afspraak is succesvol gemaakt');
     await expect(successMessage).toBeVisible({ timeout: 10000 });
 
-    console.log('🎉 Test appointment form completed successfully!');
+    console.log('🎉 Test appointment form (Vaste Datum) completed successfully!');
     console.log('📋 Summary:');
     console.log(`   - Job: ${testData.job}`);
-    console.log(`   - Planning: ${testData.planning}`);
+    console.log(`   - Planning: ${testData.planning} (Fixed date)`);
     console.log(`   - Phone: ${testData.phone}`);
     console.log(`   - Email: ${testData.email}`);
     console.log(`   - Vehicle: ${testData.plate} (${testData.mileage} km)`);
