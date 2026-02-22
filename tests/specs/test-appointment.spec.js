@@ -4,7 +4,7 @@ test.describe('TVS Engineering Test Appointment Form', () => {
   const testData = {
     job: 'Diagnose',
     planning: 'Snelst',
-    phone: '3012345678',
+    phone: '3015363880',
     email: 'test@example.com',
     address: 'Test Street 123',
     postcode: '12345',
@@ -12,7 +12,7 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     language: 'English',
     customerType: 'Particulier',
     name: 'Test User',
-    plate: 'ABC-123',
+    plate: 'FEB-20-26',
     mileage: '50000',
     vin: '1HGBH41JXMN109186',
     atTvs: false,
