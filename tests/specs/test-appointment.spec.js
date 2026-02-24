@@ -12,7 +12,6 @@ test.describe('TVS Engineering Test Appointment Form', () => {
     language: 'English',
     customerType: 'Particulier',
     name: 'Test User',
-    plate: 'FEB-20-26',
     mileage: '50000',
     vin: '1HGBH41JXMN109186',
     atTvs: false,
@@ -27,6 +26,11 @@ test.describe('TVS Engineering Test Appointment Form', () => {
 
   test('Complete test appointment form successfully', async ({ page }) => {
     test.setTimeout(90000);
+    
+    // Generate unique plate based on timestamp
+    const now = new Date();
+    const timestamp = now.getHours() + '' + now.getMinutes() + '' + now.getSeconds();
+    testData.plate = 'FEB-' + timestamp;
 
     console.log('📅 Starting test appointment form...');
 
@@ -82,23 +86,43 @@ test.describe('TVS Engineering Test Appointment Form', () => {
 
     // Step 6: Fill Contact info
     console.log('📱 Step 6: Filling contact information...');
-    // Phone number
-    await page.locator('input[type="tel"], input[placeholder*="6"]').first().fill(testData.phone);
-    await page.waitForTimeout(500);
-    // Click Controleren button to validate phone
-    console.log('📱 Step 6b: Validating phone number...');
-    try {
-      const checkBtn = page.locator('button:has-text("Controleren")');
-      if (await checkBtn.isVisible({ timeout: 2000 })) {
-        await checkBtn.click();
-        await page.waitForTimeout(2000);
-        console.log('✅ Phone validated - fields auto-filled');
-      }
-    } catch (e) {}
-
-    // Fields are auto-filled after phone validation, just verify they're filled
+    // Phone number - click first then fill
+    const phoneInput = page.locator('input[type="tel"]').first();
+    await phoneInput.click();
+    await phoneInput.fill(testData.phone);
     await page.waitForTimeout(1000);
-    console.log('✅ Contact info auto-filled');
+    
+    // Try to click Controleren button if visible
+    console.log('📱 Step 6b: Validating phone number...');
+    const checkBtn = page.locator('button:has-text("Controleren")');
+    if (await checkBtn.isVisible().catch(() => false)) {
+      await checkBtn.click();
+      await page.waitForTimeout(3000);
+      console.log('✅ Phone validated - fields auto-filled');
+    } else {
+      console.log('⚠️ Controleren button not visible, filling fields manually...');
+    }
+
+    // Wait for auto-fill or fill manually if not disabled
+    await page.waitForTimeout(1000);
+    
+    // Get all textboxes
+    const inputs = await page.getByRole('textbox').all();
+    console.log(`Found ${inputs.length} textbox inputs on page`);
+    
+    // Try to fill only if not disabled
+    for (let i = 0; i < inputs.length; i++) {
+      const isDisabled = await inputs[i].isDisabled().catch(() => false);
+      if (!isDisabled) {
+        if (i === 2) await inputs[i].fill(testData.email);
+        if (i === 3) await inputs[i].fill(testData.address);
+        if (i === 4) await inputs[i].fill(testData.postcode);
+        if (i === 5) await inputs[i].fill(testData.city);
+      }
+    }
+    
+    await page.waitForTimeout(1000);
+    console.log('✅ Contact info filled');
 
     // Step 7: Click Volgende to go to Preferences
     console.log('➡️ Step 7: Going to Preferences step...');
