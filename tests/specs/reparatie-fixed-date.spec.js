@@ -5,7 +5,7 @@ test.describe('TVS Engineering Test Appointment Form - Reparatie Fixed Date', ()
     job: 'Reparatie',
     planning: 'Gepland',
     date: '27-03-2026',
-    phone: '3123456789',
+    phone: '3015363880',
     countryCode: '+57',
     email: 'test@example.com',
     address: 'Calle 123 # 45-67',
@@ -28,10 +28,12 @@ test.describe('TVS Engineering Test Appointment Form - Reparatie Fixed Date', ()
   test('Complete test appointment form with Reparatie and fixed date', async ({ page }) => {
     test.setTimeout(90000);
     
-    // Generate unique plate based on timestamp
+    // Generate unique plate based on current month and timestamp
     const now = new Date();
+    const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    const currentMonth = months[now.getMonth()];
     const timestamp = now.getHours() + '' + now.getMinutes() + '' + now.getSeconds();
-    testData.plate = 'FEB-' + timestamp;
+    testData.plate = currentMonth + '-' + timestamp;
 
     console.log('📅 Starting test appointment form - Reparatie Fixed Date...');
 
@@ -74,36 +76,40 @@ test.describe('TVS Engineering Test Appointment Form - Reparatie Fixed Date', ()
     await page.getByRole('textbox', { name: /Selecteer een datum/ }).click();
     await page.waitForTimeout(1500);
     
-    // Navigate to month with available dates if needed - look for a day number that is not disabled
+    // Navigate to month with available dates if needed
     let attempts = 0;
     let dayFound = false;
     
     while (!dayFound && attempts < 12) {
-      // Get all day squares that are not disabled and are actual day numbers (not day names like Mon, Tue)
       const dayButtons = page.locator('.qs-square.qs-num:not(.qs-disabled)');
       const count = await dayButtons.count();
       console.log(`Found ${count} available days in current month`);
       
       if (count > 0) {
-        // Click the first available day
         await dayButtons.first().click({ force: true });
         await page.waitForTimeout(500);
         dayFound = true;
       } else {
-        // No available days, navigate to next month using the right arrow button
         console.log(`No available days, navigating to next month...`);
-        // Find the right arrow - it's the second arrow button in the header
-        const arrows = await page.locator('.qs-arrow').all();
-        if (arrows.length >= 2) {
-          await arrows[1].click({ force: true });
-        } else {
-          // Fallback: click on the month/year text to open month selector
-          await page.locator('.qs-month-year').click({ force: true });
-          await page.waitForTimeout(300);
-          // Click on Mar (March) - index 2 since Jan is 0, Feb is 1, Mar is 2
-          await page.locator('.qs-overlay-month').nth(2).click({ force: true });
-        }
-        await page.waitForTimeout(1000);
+        // Click on the month/year text to open month selector
+        const monthYear = page.locator('.qs-month-year');
+        await monthYear.click({ force: true });
+        await page.waitForTimeout(500);
+        
+        // Get all month options and click the next one
+        const months = page.locator('.qs-overlay-month');
+        const monthCount = await months.count();
+        
+        // Get current month index
+        const currentMonthText = await monthYear.textContent();
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let currentIndex = monthNames.findIndex(m => currentMonthText.toLowerCase().includes(m.toLowerCase()));
+        if (currentIndex === -1) currentIndex = 0;
+        
+        // Click next month
+        const nextIndex = (currentIndex + 1) % 12;
+        await months.nth(nextIndex).click({ force: true });
+        await page.waitForTimeout(500);
         attempts++;
       }
     }
@@ -118,21 +124,24 @@ test.describe('TVS Engineering Test Appointment Form - Reparatie Fixed Date', ()
 
     // Step 7: Fill Contact info
     console.log('📱 Step 7: Filling contact information...');
-    // Phone number
-    await page.locator('input[type="tel"], input[placeholder*="6"]').first().fill(testData.phone);
-    await page.waitForTimeout(500);
-    // Click Controleren button to validate phone
+    // Phone number - click first then fill
+    const phoneInput = page.locator('input[type="tel"]').first();
+    await phoneInput.click();
+    await phoneInput.fill(testData.phone);
+    await page.waitForTimeout(3000);
+    
+    // Click Controleren to validate phone
     console.log('📱 Step 7b: Validating phone number...');
-    try {
-      const checkBtn = page.locator('button:has-text("Controleren")');
-      if (await checkBtn.isVisible({ timeout: 2000 })) {
-        await checkBtn.click();
-        await page.waitForTimeout(2000);
-        console.log('✅ Phone validated - fields auto-filled');
-      }
-    } catch (e) {}
-    await page.waitForTimeout(1000);
-    console.log('✅ Contact info filled');
+    const checkBtn = page.locator('button:has-text("Controleren")');
+    if (await checkBtn.isVisible().catch(() => false)) {
+      await checkBtn.click();
+      await page.waitForTimeout(4000);
+      console.log('✅ Phone validated');
+    }
+    
+    // Wait for auto-filled fields from database
+    await page.waitForTimeout(3000);
+    console.log('✅ Contact info auto-filled');
 
     // Step 8: Click Volgende to go to Preferences
     console.log('➡️ Step 8: Going to Preferences step...');
@@ -144,8 +153,12 @@ test.describe('TVS Engineering Test Appointment Form - Reparatie Fixed Date', ()
     await page.getByLabel('Klanttype').selectOption(testData.customerType);
     await page.waitForTimeout(1000);
 
-    // Fill name
-    await page.getByRole('textbox', { name: /Naam/ }).fill(testData.name);
+    // Fill name - only if not auto-filled from database
+    const nameField = page.getByRole('textbox', { name: /Naam/ });
+    const nameValue = await nameField.inputValue();
+    if (!nameValue || nameValue === '') {
+      await nameField.fill(testData.name);
+    }
     await page.waitForTimeout(1000);
     console.log('✅ Preferences filled');
 
