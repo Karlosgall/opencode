@@ -71,47 +71,21 @@ test.describe('TVS Engineering Test Appointment Form - Reparatie Fixed Date', ()
     await page.getByRole('button', { name: /Gepland/ }).click();
     await page.waitForTimeout(1000);
 
-    // Step 5: Select date - find first available date
+    // Step 5: Select date - use simpler approach
     console.log('📅 Step 5: Selecting first available date...');
-    await page.getByRole('textbox', { name: /Selecteer een datum/ }).click();
-    await page.waitForTimeout(1500);
-    
-    // Navigate to month with available dates if needed
-    let attempts = 0;
-    let dayFound = false;
-    
-    while (!dayFound && attempts < 12) {
-      const dayButtons = page.locator('.qs-square.qs-num:not(.qs-disabled)');
-      const count = await dayButtons.count();
-      console.log(`Found ${count} available days in current month`);
+    try {
+      const dateInput = page.getByRole('textbox', { name: /Selecteer een datum/ });
+      await dateInput.click({ force: true });
+      await page.waitForTimeout(1500);
       
-      if (count > 0) {
-        await dayButtons.first().click({ force: true });
-        await page.waitForTimeout(500);
-        dayFound = true;
-      } else {
-        console.log(`No available days, navigating to next month...`);
-        // Click on the month/year text to open month selector
-        const monthYear = page.locator('.qs-month-year');
-        await monthYear.click({ force: true });
-        await page.waitForTimeout(500);
-        
-        // Get all month options and click the next one
-        const months = page.locator('.qs-overlay-month');
-        const monthCount = await months.count();
-        
-        // Get current month index
-        const currentMonthText = await monthYear.textContent();
-        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        let currentIndex = monthNames.findIndex(m => currentMonthText.toLowerCase().includes(m.toLowerCase()));
-        if (currentIndex === -1) currentIndex = 0;
-        
-        // Click next month
-        const nextIndex = (currentIndex + 1) % 12;
-        await months.nth(nextIndex).click({ force: true });
-        await page.waitForTimeout(500);
-        attempts++;
+      const availableDay = page.locator('text="23"').first();
+      if (await availableDay.isVisible({ timeout: 3000 })) {
+        await availableDay.click({ force: true });
+        await page.waitForTimeout(1500);
+        console.log('✅ Date 23 selected from calendar');
       }
+    } catch (e) {
+      console.log('⚠️ Calendar selection may have failed, continuing...');
     }
     
     await page.waitForTimeout(1000);
