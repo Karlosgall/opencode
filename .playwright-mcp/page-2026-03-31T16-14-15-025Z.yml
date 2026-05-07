@@ -1,0 +1,102 @@
+- generic [ref=e614]:
+  - banner [ref=e615]:
+    - generic [ref=e616]:
+      - generic [ref=e617]:
+        - generic [ref=e618]: Portal
+        - heading "Subject Registration" [level=1] [ref=e619]
+      - generic [ref=e620]:
+        - button "My Orders" [ref=e621]:
+          - img
+          - generic [ref=e622]: My Orders
+        - button "CA" [ref=e623]:
+          - generic [ref=e625]: CA
+  - main [ref=e626]:
+    - generic [ref=e627]:
+      - generic [ref=e628]:
+        - generic [ref=e629]:
+          - button [ref=e630]:
+            - img
+          - generic [ref=e631]:
+            - heading "Your details" [level=1] [ref=e632]
+            - paragraph [ref=e633]: Enter your contact and address information
+        - generic [ref=e634]:
+          - generic [ref=e635]: Step 04 / 07
+          - progressbar [ref=e637]
+      - generic [ref=e639]:
+        - generic [ref=e640]:
+          - generic [ref=e641]:
+            - generic [ref=e642]:
+              - heading "Your information" [level=3] [ref=e643]:
+                - img [ref=e644]
+                - text: Your information
+              - paragraph [ref=e647]: Your contact details for this service
+            - generic [ref=e649]:
+              - generic [ref=e650]:
+                - generic [ref=e651]: First Name
+                - textbox "First Name" [ref=e652]
+              - generic [ref=e653]:
+                - generic [ref=e654]: Last Name
+                - textbox "Last Name" [ref=e655]
+              - generic [ref=e656]:
+                - generic [ref=e657]: Email
+                - textbox "Email" [ref=e658]:
+                  - /placeholder: email@example.com
+                  - text: karlitosgallego123@gmail.com
+              - generic [ref=e659]:
+                - generic [ref=e660]: Phone
+                - textbox "Phone" [ref=e661]:
+                  - /placeholder: +1 (000) 000-0000
+          - generic [ref=e662]:
+            - generic [ref=e663]:
+              - generic [ref=e664]:
+                - heading "Billing Address" [level=3] [ref=e665]:
+                  - img [ref=e666]
+                  - text: Billing Address
+                - paragraph [ref=e668]: Billing address
+              - generic [ref=e670]:
+                - generic [ref=e671]:
+                  - generic [ref=e672]: Street Address
+                  - textbox "Street address" [ref=e673]
+                - generic [ref=e674]:
+                  - generic [ref=e675]:
+                    - generic [ref=e676]: City
+                    - textbox "City" [ref=e677]
+                  - generic [ref=e678]:
+                    - generic [ref=e679]: Postal Code
+                    - textbox "ZIP" [ref=e680]
+                - generic [ref=e681]:
+                  - generic [ref=e682]: Country
+                  - combobox [ref=e683]:
+                    - generic [ref=e684]: Select country...
+                    - img [ref=e685]
+            - generic [ref=e687]:
+              - generic [ref=e688]:
+                - heading "Shipping Address" [level=3] [ref=e689]:
+                  - img [ref=e690]
+                  - text: Shipping Address
+                - paragraph [ref=e695]: Shipping address
+              - generic [ref=e697]:
+                - generic [ref=e698]:
+                  - generic [ref=e699]: Street Address
+                  - textbox "Street address" [ref=e700]
+                - generic [ref=e701]:
+                  - generic [ref=e702]:
+                    - generic [ref=e703]: City
+                    - textbox "City" [ref=e704]
+                  - generic [ref=e705]:
+                    - generic [ref=e706]: Postal Code
+                    - textbox "ZIP" [ref=e707]
+                - generic [ref=e708]:
+                  - generic [ref=e709]: Country
+                  - combobox [ref=e710]:
+                    - generic [ref=e711]: Select country...
+                    - img [ref=e712]
+          - generic [ref=e714]:
+            - checkbox "Shipping address is identical to billing address" [checked] [ref=e715] [cursor=pointer]
+            - generic [ref=e716] [cursor=pointer]: Shipping address is identical to billing address
+        - generic [ref=e717]:
+          - generic [ref=e718]: "Status: Ready to continue"
+          - generic [ref=e720]:
+            - button "Save and continue" [disabled]:
+              - text: Save and continue
+              - img

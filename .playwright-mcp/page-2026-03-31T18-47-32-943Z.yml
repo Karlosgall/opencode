@@ -1,0 +1,152 @@
+- generic [ref=e1209]:
+  - banner [ref=e1210]:
+    - generic [ref=e1211]:
+      - generic [ref=e1212]:
+        - generic [ref=e1213]: Portal
+        - heading "Tuning Session" [level=1] [ref=e1214]
+      - generic [ref=e1215]:
+        - button "My Orders" [ref=e1216]:
+          - img
+          - generic [ref=e1217]: My Orders
+        - button "CA" [ref=e1218]:
+          - generic [ref=e1220]: CA
+  - main [ref=e1221]:
+    - generic [ref=e1222]:
+      - generic [ref=e1223]:
+        - generic [ref=e1225]:
+          - heading "Tuning Session" [level=1] [ref=e1226]
+          - paragraph [ref=e1227]: Final calibration and performance optimization
+        - generic [ref=e1228]:
+          - generic [ref=e1229]: Step 07 / 07
+          - progressbar [ref=e1231]
+      - generic [ref=e1233]:
+        - button "[DEV] Reset Appointment Day" [ref=e1305]
+        - generic [ref=e1236]:
+          - generic [ref=e1238]:
+            - img [ref=e1240]
+            - heading "Performance Calibration" [level=3] [ref=e1244]
+          - generic [ref=e1246]:
+            - generic [ref=e1306]:
+              - img [ref=e1308]
+              - generic [ref=e1312]: Live Now
+            - generic [ref=e1313]:
+              - heading "Entering Waiting Room" [level=3] [ref=e1314]
+              - paragraph [ref=e1315]: Your appointment is today! Our technician will be with you shortly to begin the performance calibration. Please keep this page open.
+            - generic [ref=e1256]:
+              - generic [ref=e1257]:
+                - img [ref=e1258]
+                - paragraph [ref=e1261]: Box Unlock
+                - paragraph [ref=e1262]: Included
+              - generic [ref=e1263]:
+                - img [ref=e1264]
+                - paragraph [ref=e1266]: Reprogramming
+                - paragraph [ref=e1267]: Live
+              - generic [ref=e1268]:
+                - img [ref=e1269]
+                - paragraph [ref=e1272]: Duration
+                - paragraph [ref=e1273]: 2 Hours
+            - generic [ref=e1274]:
+              - generic [ref=e1275]:
+                - heading "Booking Details" [level=4] [ref=e1276]:
+                  - img [ref=e1277]
+                  - text: Booking Details
+                - generic [ref=e1279]: Confirmed
+              - generic [ref=e1280]:
+                - generic [ref=e1281]:
+                  - paragraph [ref=e1282]: Appointment
+                  - paragraph [ref=e1283]: Tue, Apr 7, 2026
+                  - paragraph [ref=e1284]: 8:00 AM - 10:00 AM
+                - generic [ref=e1285]:
+                  - paragraph [ref=e1286]: Tuning Stage
+                  - paragraph [ref=e1287]: stage1
+            - generic [ref=e1289]:
+              - generic [ref=e1290]:
+                - generic [ref=e1293]:
+                  - paragraph [ref=e1294]: Order Traceability
+                  - paragraph [ref=e1295]: "Last checked: 01:46 p. m."
+                - generic [ref=e1296]:
+                  - button "Refresh status" [ref=e1297]:
+                    - img
+                    - generic [ref=e1298]: Refresh status
+                  - button "Toggle Stepper" [expanded] [ref=e1299]:
+                    - img
+                    - generic [ref=e1300]: Toggle Stepper
+              - generic [ref=e1321]:
+                - generic [ref=e1324]:
+                  - img [ref=e1326]
+                  - generic [ref=e1330]:
+                    - heading "Order Created" [level=4] [ref=e1331]
+                    - generic [ref=e1332]:
+                      - generic [ref=e1333]:
+                        - img [ref=e1334]
+                        - text: 31/3/2026, 1:44:38 p. m.
+                      - paragraph [ref=e1337]: "\"Order created via onboarding\""
+                - generic [ref=e1340]:
+                  - img [ref=e1342]
+                  - generic [ref=e1344]:
+                    - heading "Warehouse Assigned" [level=4] [ref=e1345]
+                    - generic [ref=e1346]:
+                      - generic [ref=e1347]:
+                        - img [ref=e1348]
+                        - text: 31/3/2026, 1:44:41 p. m.
+                      - paragraph [ref=e1351]: "\"Warehouse assigned: TVS International. Public ID: TVS00013\""
+                - generic [ref=e1354]:
+                  - img [ref=e1356]
+                  - generic [ref=e1361]:
+                    - heading "Dongle Shipped" [level=4] [ref=e1362]
+                    - generic [ref=e1363]:
+                      - generic [ref=e1364]:
+                        - img [ref=e1365]
+                        - text: 31/3/2026, 1:45:05 p. m.
+                      - paragraph [ref=e1368]: "\"Dev mode advancement\""
+                - generic [ref=e1371]:
+                  - img [ref=e1373]
+                  - generic [ref=e1376]:
+                    - heading "Dongle Delivered" [level=4] [ref=e1377]
+                    - generic [ref=e1378]:
+                      - generic [ref=e1379]:
+                        - img [ref=e1380]
+                        - text: 31/3/2026, 1:45:17 p. m.
+                      - paragraph [ref=e1383]: "\"Dev mode advancement\""
+                - generic [ref=e1386]:
+                  - img [ref=e1388]
+                  - generic [ref=e1391]:
+                    - heading "Appointment Scheduled" [level=4] [ref=e1392]
+                    - generic [ref=e1393]:
+                      - generic [ref=e1394]:
+                        - img [ref=e1395]
+                        - text: 31/3/2026, 1:46:16 p. m.
+                      - paragraph [ref=e1398]: "\"Appointment booked for 2026-04-07 08:00:00\""
+                - generic [ref=e1401]:
+                  - img [ref=e1403]
+                  - generic [ref=e1405]:
+                    - heading "Tuning in Progress" [level=4] [ref=e1406]
+                    - generic [ref=e1441]:
+                      - generic [ref=e1442]:
+                        - img [ref=e1443]
+                        - text: 31/3/2026, 1:47:30 p. m.
+                      - paragraph [ref=e1446]: "\"Dev mode advancement\""
+                - generic [ref=e1412]:
+                  - img [ref=e1414]
+                  - generic [ref=e1417]:
+                    - heading "Tuning Ready" [level=4] [ref=e1418]
+                    - generic [ref=e1419]: Pending
+                    - button "Set as current (Dev)" [ref=e1448]
+                - generic [ref=e1422]:
+                  - img [ref=e1424]
+                  - generic [ref=e1428]:
+                    - heading "Dongle Returned" [level=4] [ref=e1429]
+                    - generic [ref=e1430]: Pending
+                - generic [ref=e1432]:
+                  - img [ref=e1434]
+                  - generic [ref=e1437]:
+                    - heading "Completed" [level=4] [ref=e1438]
+                    - generic [ref=e1439]: Pending
+        - generic [ref=e1301]:
+          - generic [ref=e1302]: "Status: Ready for session"
+          - generic [ref=e1304]:
+            - button "Complete Onboarding" [disabled]:
+              - text: Complete Onboarding
+              - img
+    - button "Open chat" [ref=e1316]:
+      - img [ref=e1317]

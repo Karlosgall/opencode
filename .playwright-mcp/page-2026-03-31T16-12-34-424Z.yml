@@ -1,0 +1,102 @@
+- generic [ref=e212]:
+  - banner [ref=e213]:
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - generic [ref=e216]: Portal
+        - heading "Vehicle Onboarding" [level=1] [ref=e217]
+      - generic [ref=e218]:
+        - button "My Orders" [ref=e219]:
+          - img
+          - generic [ref=e220]: My Orders
+        - button "CA" [ref=e221]:
+          - generic [ref=e223]: CA
+  - main [ref=e224]:
+    - generic [ref=e225]:
+      - generic [ref=e226]:
+        - generic [ref=e227]:
+          - button [ref=e228]:
+            - img
+          - generic [ref=e229]:
+            - heading "Identify Vehicle" [level=1] [ref=e230]
+            - paragraph [ref=e231]: Automatic VIN extraction or manual entry
+        - generic [ref=e232]:
+          - generic [ref=e233]: Step 02 / 07
+          - progressbar [ref=e235]
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - generic [ref=e239]:
+            - heading "Vehicle Identification" [level=3] [ref=e241]:
+              - img [ref=e242]
+              - text: Vehicle Identification
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - heading "Manual Entry" [level=3] [ref=e251]
+                - generic [ref=e252]:
+                  - generic [ref=e253]: VIN
+                  - generic [ref=e254]:
+                    - textbox "VIN" [ref=e255]:
+                      - /placeholder: Enter VIN (17 characters)
+                      - text: VSSDD75F6N6542539
+                    - button [ref=e256]:
+                      - img
+              - generic [ref=e257]:
+                - heading "Automatic Extraction" [level=3] [ref=e260]
+                - generic [ref=e261] [cursor=pointer]:
+                  - img [ref=e263]
+                  - generic [ref=e266]:
+                    - paragraph [ref=e267]: Drop an image here
+                    - paragraph [ref=e268]: JPEG / PNG / WebP — Max 10MB
+                - button "Extract VIN" [disabled]:
+                  - img
+                  - text: Extract VIN
+          - generic [ref=e274]:
+            - heading "Vehicle details" [level=3] [ref=e276]:
+              - img [ref=e277]
+              - text: Vehicle details
+            - generic [ref=e282]:
+              - generic [ref=e283]:
+                - generic [ref=e284]:
+                  - generic [ref=e287]: Make
+                  - paragraph [ref=e288]: SEAT
+                - generic [ref=e289]:
+                  - generic [ref=e292]: Model
+                  - paragraph [ref=e293]: cupra
+                - generic [ref=e294]:
+                  - generic [ref=e297]: Year
+                  - paragraph [ref=e298]: "2022"
+                - generic [ref=e299]:
+                  - generic [ref=e302]: Engine
+                  - paragraph [ref=e303]: DNFC
+                - generic [ref=e304]:
+                  - generic [ref=e307]: ECU
+                  - paragraph [ref=e308]: 81A 906 259 B
+                - generic [ref=e309]:
+                  - generic [ref=e312]: DSG
+                  - paragraph [ref=e313]: 0GC
+              - generic [ref=e314]:
+                - img [ref=e315]
+                - generic [ref=e318]:
+                  - generic [ref=e319]: Vehicle found
+                  - generic [ref=e320]: Ready to continue
+              - generic [ref=e321]:
+                - generic [ref=e322]:
+                  - img [ref=e323]
+                  - generic [ref=e327]: Previous Order History
+                - generic [ref=e328]:
+                  - generic [ref=e329]:
+                    - generic [ref=e332]: Last Stage
+                    - paragraph [ref=e333]: Stage 2
+                  - generic [ref=e334]:
+                    - generic [ref=e337]: Order Date
+                    - paragraph [ref=e338]: Tue, Mar 31, 2026
+        - generic [ref=e339]:
+          - img [ref=e340]
+          - generic [ref=e342]:
+            - generic [ref=e343]: Active order exists
+            - generic [ref=e344]: This vehicle already has an active order in progress. You cannot start a new order until the current one is completed or cancelled.
+        - generic [ref=e269]:
+          - generic [ref=e270]: "Status: Vehicle Identified"
+          - generic [ref=e272]:
+            - button "Continue" [disabled]:
+              - text: Continue
+              - img

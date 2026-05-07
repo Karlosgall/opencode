@@ -1,0 +1,119 @@
+- generic [ref=e1658]:
+  - banner [ref=e1659]:
+    - generic [ref=e1660]:
+      - generic [ref=e1661]:
+        - generic [ref=e1662]: Portal
+        - heading "Schedule Appointment" [level=1] [ref=e1663]
+      - generic [ref=e1664]:
+        - button "My Orders" [ref=e1665]:
+          - img
+          - generic [ref=e1666]: My Orders
+        - button "CA" [ref=e1667]:
+          - generic [ref=e1669]: CA
+  - main [ref=e1670]:
+    - generic [ref=e1671]:
+      - generic [ref=e1672]:
+        - generic [ref=e1674]:
+          - heading "Schedule Appointment" [level=1] [ref=e1675]
+          - paragraph [ref=e1676]: Select a date and time for your tuning session
+        - generic [ref=e1677]:
+          - generic [ref=e1678]: Step 06 / 07
+          - progressbar [ref=e1680]
+      - generic [ref=e1683]:
+        - generic [ref=e1685]:
+          - img [ref=e1687]
+          - heading "Service Scheduling" [level=3] [ref=e1690]
+        - generic [ref=e1692]:
+          - generic [ref=e1693]:
+            - generic [ref=e1694]:
+              - img [ref=e1696]
+              - generic [ref=e1700]: Locked
+            - generic [ref=e1701]:
+              - heading "Appointment Booking Locked" [level=3] [ref=e1702]
+              - paragraph [ref=e1703]: This phase requires manual verification of your order and vehicle data by our engineering team. You will receive an email notification once your booking window becomes available.
+            - generic [ref=e1704]:
+              - generic [ref=e1705]:
+                - img [ref=e1706]
+                - paragraph [ref=e1709]: Processing Time
+                - paragraph [ref=e1710]: 24-48 Hours
+              - generic [ref=e1711]:
+                - img [ref=e1712]
+                - paragraph [ref=e1714]: Next Available
+                - paragraph [ref=e1715]: 2026-04-07
+            - generic [ref=e1716]:
+              - generic [ref=e1717]:
+                - generic [ref=e1720]:
+                  - paragraph [ref=e1721]: Order Traceability
+                  - paragraph [ref=e1722]: "Last checked: 11:33 a. m."
+                - generic [ref=e1723]:
+                  - button "Refresh status" [ref=e1724]:
+                    - img
+                    - generic [ref=e1725]: Refresh status
+                  - button "Toggle Stepper" [expanded] [ref=e1726]:
+                    - img
+                    - generic [ref=e1727]: Toggle Stepper
+              - generic [ref=e1734]:
+                - generic [ref=e1737]:
+                  - img [ref=e1739]
+                  - generic [ref=e1743]:
+                    - heading "Order Created" [level=4] [ref=e1744]
+                    - generic [ref=e1745]:
+                      - generic [ref=e1746]:
+                        - img [ref=e1747]
+                        - text: 31/3/2026, 11:30:17 a. m.
+                      - paragraph [ref=e1750]: "\"Order created via onboarding\""
+                - generic [ref=e1753]:
+                  - img [ref=e1755]
+                  - generic [ref=e1758]:
+                    - heading "Warehouse Assigned" [level=4] [ref=e1759]
+                    - generic [ref=e1760]:
+                      - generic [ref=e1761]:
+                        - img [ref=e1762]
+                        - text: 31/3/2026, 11:30:20 a. m.
+                      - paragraph [ref=e1765]: "\"Warehouse assigned: TVS International. Public ID: TVS00012\""
+                - generic [ref=e1768]:
+                  - img [ref=e1770]
+                  - generic [ref=e1775]:
+                    - heading "Dongle Shipped" [level=4] [ref=e1776]
+                    - generic [ref=e1839]:
+                      - generic [ref=e1840]:
+                        - img [ref=e1841]
+                        - text: 31/3/2026, 11:33:33 a. m.
+                      - paragraph [ref=e1844]: "\"Dev mode advancement\""
+                - generic [ref=e1782]:
+                  - img [ref=e1784]
+                  - generic [ref=e1787]:
+                    - heading "Dongle Delivered" [level=4] [ref=e1788]
+                    - generic [ref=e1789]: Pending
+                    - button "Set as current (Dev)" [ref=e1846]
+                - generic [ref=e1792]:
+                  - img [ref=e1794]
+                  - generic [ref=e1796]:
+                    - heading "Appointment Scheduled" [level=4] [ref=e1797]
+                    - generic [ref=e1798]: Pending
+                - generic [ref=e1801]:
+                  - img [ref=e1803]
+                  - generic [ref=e1805]:
+                    - heading "Tuning in Progress" [level=4] [ref=e1806]
+                    - generic [ref=e1807]: Pending
+                - generic [ref=e1810]:
+                  - img [ref=e1812]
+                  - generic [ref=e1815]:
+                    - heading "Tuning Ready" [level=4] [ref=e1816]
+                    - generic [ref=e1817]: Pending
+                - generic [ref=e1820]:
+                  - img [ref=e1822]
+                  - generic [ref=e1826]:
+                    - heading "Dongle Returned" [level=4] [ref=e1827]
+                    - generic [ref=e1828]: Pending
+                - generic [ref=e1830]:
+                  - img [ref=e1832]
+                  - generic [ref=e1835]:
+                    - heading "Completed" [level=4] [ref=e1836]
+                    - generic [ref=e1837]: Pending
+          - generic [ref=e1728]:
+            - generic [ref=e1729]: "Status: Scheduling not available yet"
+            - generic [ref=e1731]:
+              - button "Continue" [disabled]:
+                - text: Continue
+                - img

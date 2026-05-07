@@ -1,0 +1,55 @@
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Portal
+        - heading "My Orders" [level=1] [ref=e10]
+      - generic [ref=e11]:
+        - button "My Orders" [ref=e12]:
+          - img
+          - generic [ref=e13]: My Orders
+        - button "CA" [ref=e14]:
+          - generic [ref=e16]: CA
+  - main [ref=e17]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - img [ref=e22]
+          - text: Order Management
+        - heading "Your Orders" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Track and manage your vehicle tuning progress and upcoming appointments.
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - heading "Active Orders (2)" [level=2] [ref=e29]
+          - button "New Order" [ref=e30]:
+            - img
+            - text: New Order
+        - generic [ref=e31]:
+          - generic [ref=e35] [cursor=pointer]:
+            - generic [ref=e36]:
+              - img [ref=e38]
+              - generic [ref=e40]:
+                - heading "2022 SEAT cupra" [level=3] [ref=e42]
+                - generic [ref=e43]:
+                  - paragraph [ref=e44]: "ID: 019d4423"
+                  - generic [ref=e45]: •
+                  - generic [ref=e46]: "VIN: 542539"
+            - generic [ref=e47]:
+              - generic [ref=e48]:
+                - paragraph [ref=e49]: Status
+                - generic [ref=e50]: APPOINTMENT CREATED
+              - img [ref=e52]
+          - generic [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - generic [ref=e62]:
+                - heading "2020 Volkswagen passat" [level=3] [ref=e64]
+                - generic [ref=e65]:
+                  - paragraph [ref=e66]: "ID: 019d3ef5"
+                  - generic [ref=e67]: •
+                  - generic [ref=e68]: "VIN: 063033"
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - paragraph [ref=e71]: Status
+                - generic [ref=e72]: COMPLETED
+              - img [ref=e74]

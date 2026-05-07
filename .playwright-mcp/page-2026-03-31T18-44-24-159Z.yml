@@ -1,0 +1,109 @@
+- generic [ref=e707]:
+  - banner [ref=e708]:
+    - generic [ref=e709]:
+      - generic [ref=e710]:
+        - generic [ref=e711]: Portal
+        - heading "Checkout Protocol" [level=1] [ref=e712]
+      - generic [ref=e713]:
+        - button "My Orders" [ref=e714]:
+          - img
+          - generic [ref=e715]: My Orders
+        - button "CA" [ref=e716]:
+          - generic [ref=e718]: CA
+  - main [ref=e719]:
+    - generic [ref=e720]:
+      - generic [ref=e721]:
+        - generic [ref=e722]:
+          - button [ref=e723]:
+            - img
+          - generic [ref=e724]:
+            - heading "Subject Protocol" [level=1] [ref=e725]
+            - paragraph [ref=e726]: Review and confirm your order details
+        - generic [ref=e727]:
+          - generic [ref=e728]: Step 05 / 07
+          - progressbar [ref=e730]
+      - generic [ref=e732]:
+        - generic [ref=e733]:
+          - generic [ref=e734]:
+            - generic [ref=e735]:
+              - generic [ref=e737] [cursor=pointer]:
+                - generic [ref=e738]:
+                  - img [ref=e740]
+                  - generic [ref=e742]:
+                    - img [ref=e743]
+                    - text: Active
+                - generic [ref=e745]:
+                  - heading "Credit card" [level=3] [ref=e746]
+                  - paragraph [ref=e747]: Visa / Mastercard / Amex
+              - generic [ref=e748]:
+                - generic [ref=e750]: Insufficient Funds
+                - generic [ref=e751]:
+                  - img [ref=e754]
+                  - generic [ref=e759]:
+                    - heading "TVS Internal Credits" [level=3] [ref=e760]
+                    - paragraph [ref=e761]: "Account ID: SEC-000"
+            - generic [ref=e762]:
+              - heading "Payment details" [level=3] [ref=e764]:
+                - img [ref=e765]
+                - text: Payment details
+              - generic [ref=e769]:
+                - generic [ref=e770]:
+                  - generic [ref=e771]: Cardholder Name
+                  - generic [ref=e772]:
+                    - textbox "Full name as on card" [ref=e773]: Cargos
+                    - img [ref=e774]
+                - generic [ref=e777]:
+                  - generic [ref=e778]: Card Number
+                  - generic [ref=e779]:
+                    - textbox "0000 0000 0000 0000" [ref=e780]: "4242424242424242"
+                    - img [ref=e781]
+                - generic [ref=e783]:
+                  - generic [ref=e784]:
+                    - generic [ref=e785]: Expiry Date
+                    - textbox "MM / YY" [ref=e786]: 12/28
+                  - generic [ref=e787]:
+                    - generic [ref=e788]: Security Code
+                    - textbox "CVV" [ref=e789]: "123"
+              - generic [ref=e791] [cursor=pointer]:
+                - checkbox "I AGREE TO BE CHARGED YOUR PAYMENT IS SECURE" [checked] [active] [ref=e792]:
+                  - generic:
+                    - img
+                - generic [ref=e793]:
+                  - generic [ref=e794]: I agree to be charged
+                  - paragraph [ref=e795]:
+                    - img [ref=e796]
+                    - text: Your payment is secure
+                - generic [ref=e835]:
+                  - img [ref=e836]
+                  - generic [ref=e839]: Confirmed
+          - generic [ref=e800]:
+            - generic [ref=e801]:
+              - heading "Order Summary" [level=3] [ref=e802]:
+                - img [ref=e803]
+                - text: Order Summary
+              - paragraph [ref=e807]: Order summary
+            - generic [ref=e808]:
+              - generic [ref=e809]:
+                - paragraph [ref=e810]: Service Calibration
+                - paragraph [ref=e811]: stage1 Tuning Package
+              - generic [ref=e812]:
+                - generic [ref=e813]:
+                  - generic [ref=e814]: Subtotal
+                  - generic [ref=e815]: €499.00
+                - generic [ref=e816]:
+                  - generic [ref=e817]: Tool Rental Fee (Auth)
+                  - generic [ref=e818]: $500.00
+                - generic [ref=e819]:
+                  - generic [ref=e820]: Tax
+                  - generic [ref=e821]: €104.79
+                - generic [ref=e822]:
+                  - generic [ref=e823]: Total
+                  - generic [ref=e824]: €1103.79
+            - generic [ref=e826]:
+              - img [ref=e827]
+              - paragraph [ref=e830]: 256-bit encryption. Secure payment processing.
+        - generic [ref=e831]:
+          - generic [ref=e832]: "Status: Payment Protocol"
+          - button "Pay and continue" [ref=e840]:
+            - text: Pay and continue
+            - img

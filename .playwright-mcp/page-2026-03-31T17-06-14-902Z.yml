@@ -1,0 +1,55 @@
+- generic [ref=e120]:
+  - banner [ref=e121]:
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]: Portal
+        - heading "Tuning Ready" [level=1] [ref=e125]
+      - generic [ref=e126]:
+        - button "My Orders" [ref=e127]:
+          - img
+          - generic [ref=e128]: My Orders
+        - button "CA" [ref=e129]:
+          - generic [ref=e131]: CA
+  - main [ref=e132]:
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e136]:
+          - heading "Tuning Ready" [level=1] [ref=e137]
+          - paragraph [ref=e138]: Your vehicle calibration is complete
+        - generic [ref=e139]:
+          - generic [ref=e140]: Step 00 / 07
+          - progressbar [ref=e142]
+      - generic [ref=e145]:
+        - generic [ref=e147]:
+          - img [ref=e149]
+          - heading "Performance Calibration Complete" [level=3] [ref=e153]
+          - generic [ref=e154]: Ready
+        - generic [ref=e156]:
+          - img [ref=e159]
+          - generic [ref=e162]:
+            - heading "Tuning Complete" [level=3] [ref=e163]
+            - paragraph [ref=e164]: Your 2021 Volkswagen golf has been successfully tuned. Please return the dongle to the warehouse below.
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - img [ref=e168]
+              - generic [ref=e172]: Return Dongle To
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - img [ref=e175]
+                - paragraph [ref=e180]: TVS International
+              - generic [ref=e181]:
+                - img [ref=e182]
+                - generic [ref=e185]:
+                  - paragraph [ref=e186]: 123 Test St
+                  - paragraph [ref=e187]: US
+          - generic [ref=e189]:
+            - generic [ref=e192]:
+              - paragraph [ref=e193]: Order Traceability
+              - paragraph [ref=e194]: "Last checked: 12:06 p. m."
+            - generic [ref=e195]:
+              - button "Refresh status" [ref=e196]:
+                - img
+                - generic [ref=e197]: Refresh status
+              - button "Toggle Stepper" [ref=e198]:
+                - img
+                - generic [ref=e199]: Toggle Stepper

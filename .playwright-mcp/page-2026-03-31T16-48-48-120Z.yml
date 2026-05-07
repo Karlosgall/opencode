@@ -1,0 +1,145 @@
+- generic [ref=e2030]:
+  - banner [ref=e2031]:
+    - generic [ref=e2032]:
+      - generic [ref=e2033]:
+        - generic [ref=e2034]: Portal
+        - heading "Tuning Session" [level=1] [ref=e2035]
+      - generic [ref=e2036]:
+        - button "My Orders" [ref=e2037]:
+          - img
+          - generic [ref=e2038]: My Orders
+        - button "CA" [ref=e2039]:
+          - generic [ref=e2041]: CA
+  - main [ref=e2042]:
+    - generic [ref=e2043]:
+      - generic [ref=e2044]:
+        - generic [ref=e2046]:
+          - heading "Tuning Session" [level=1] [ref=e2047]
+          - paragraph [ref=e2048]: Final calibration and performance optimization
+        - generic [ref=e2049]:
+          - generic [ref=e2050]: Step 07 / 07
+          - progressbar [ref=e2052]
+      - generic [ref=e2054]:
+        - button "[DEV] Simulate Appointment Day" [ref=e2056]
+        - generic [ref=e2057]:
+          - generic [ref=e2059]:
+            - img [ref=e2061]
+            - heading "Performance Calibration" [level=3] [ref=e2065]
+          - generic [ref=e2067]:
+            - generic [ref=e2068]:
+              - img [ref=e2070]
+              - generic [ref=e2074]: Locked
+            - heading "Tuning Session Locked" [level=3] [ref=e2076]
+            - generic [ref=e2077]:
+              - generic [ref=e2078]:
+                - img [ref=e2079]
+                - paragraph [ref=e2082]: Box Unlock
+                - paragraph [ref=e2083]: Included
+              - generic [ref=e2084]:
+                - img [ref=e2085]
+                - paragraph [ref=e2087]: Reprogramming
+                - paragraph [ref=e2088]: Live
+              - generic [ref=e2089]:
+                - img [ref=e2090]
+                - paragraph [ref=e2093]: Duration
+                - paragraph [ref=e2094]: 2 Hours
+            - generic [ref=e2095]:
+              - generic [ref=e2096]:
+                - heading "Booking Details" [level=4] [ref=e2097]:
+                  - img [ref=e2098]
+                  - text: Booking Details
+                - generic [ref=e2100]: Confirmed
+              - generic [ref=e2101]:
+                - generic [ref=e2102]:
+                  - paragraph [ref=e2103]: Appointment
+                  - paragraph [ref=e2104]: Fri, Apr 24, 2026
+                  - paragraph [ref=e2105]: 2:00 PM - 4:00 PM
+                - generic [ref=e2106]:
+                  - paragraph [ref=e2107]: Tuning Stage
+                  - paragraph [ref=e2108]: stage1
+              - button "Reschedule Appointment" [ref=e2109]
+            - generic [ref=e2110]:
+              - generic [ref=e2111]:
+                - generic [ref=e2114]:
+                  - paragraph [ref=e2115]: Order Traceability
+                  - paragraph [ref=e2116]: "Last checked: 11:47 a. m."
+                - generic [ref=e2117]:
+                  - button "Refresh status" [ref=e2118]:
+                    - img
+                    - generic [ref=e2119]: Refresh status
+                  - button "Toggle Stepper" [expanded] [active] [ref=e2120]:
+                    - img
+                    - generic [ref=e2121]: Toggle Stepper
+              - generic [ref=e2128]:
+                - generic [ref=e2131]:
+                  - img [ref=e2133]
+                  - generic [ref=e2137]:
+                    - heading "Order Created" [level=4] [ref=e2138]
+                    - generic [ref=e2139]:
+                      - generic [ref=e2140]:
+                        - img [ref=e2141]
+                        - text: 31/3/2026, 11:30:17 a. m.
+                      - paragraph [ref=e2144]: "\"Order created via onboarding\""
+                - generic [ref=e2147]:
+                  - img [ref=e2149]
+                  - generic [ref=e2151]:
+                    - heading "Warehouse Assigned" [level=4] [ref=e2152]
+                    - generic [ref=e2153]:
+                      - generic [ref=e2154]:
+                        - img [ref=e2155]
+                        - text: 31/3/2026, 11:30:20 a. m.
+                      - paragraph [ref=e2158]: "\"Warehouse assigned: TVS International. Public ID: TVS00012\""
+                - generic [ref=e2161]:
+                  - img [ref=e2163]
+                  - generic [ref=e2168]:
+                    - heading "Dongle Shipped" [level=4] [ref=e2169]
+                    - generic [ref=e2170]:
+                      - generic [ref=e2171]:
+                        - img [ref=e2172]
+                        - text: 31/3/2026, 11:33:33 a. m.
+                      - paragraph [ref=e2175]: "\"Dev mode advancement\""
+                - generic [ref=e2178]:
+                  - img [ref=e2180]
+                  - generic [ref=e2183]:
+                    - heading "Dongle Delivered" [level=4] [ref=e2184]
+                    - generic [ref=e2185]:
+                      - generic [ref=e2186]:
+                        - img [ref=e2187]
+                        - text: 31/3/2026, 11:34:44 a. m.
+                      - paragraph [ref=e2190]: "\"Dev mode advancement\""
+                - generic [ref=e2193]:
+                  - img [ref=e2195]
+                  - generic [ref=e2198]:
+                    - heading "Appointment Scheduled" [level=4] [ref=e2199]
+                    - generic [ref=e2200]:
+                      - generic [ref=e2201]:
+                        - img [ref=e2202]
+                        - text: 31/3/2026, 11:47:45 a. m.
+                      - paragraph [ref=e2205]: "\"Appointment booked for 2026-04-24 14:00:00\""
+                - generic [ref=e2208]:
+                  - img [ref=e2210]
+                  - generic [ref=e2212]:
+                    - heading "Tuning in Progress" [level=4] [ref=e2213]
+                    - generic [ref=e2214]: Pending
+                    - button "Set as current (Dev)" [ref=e2216]
+                - generic [ref=e2219]:
+                  - img [ref=e2221]
+                  - generic [ref=e2224]:
+                    - heading "Tuning Ready" [level=4] [ref=e2225]
+                    - generic [ref=e2226]: Pending
+                - generic [ref=e2229]:
+                  - img [ref=e2231]
+                  - generic [ref=e2235]:
+                    - heading "Dongle Returned" [level=4] [ref=e2236]
+                    - generic [ref=e2237]: Pending
+                - generic [ref=e2239]:
+                  - img [ref=e2241]
+                  - generic [ref=e2244]:
+                    - heading "Completed" [level=4] [ref=e2245]
+                    - generic [ref=e2246]: Pending
+        - generic [ref=e2122]:
+          - generic [ref=e2123]: "Status: Waiting for service"
+          - generic [ref=e2125]:
+            - button "Complete Onboarding" [disabled]:
+              - text: Complete Onboarding
+              - img

@@ -1,0 +1,117 @@
+- generic [ref=e842]:
+  - banner [ref=e843]:
+    - generic [ref=e844]:
+      - generic [ref=e845]:
+        - generic [ref=e846]: Portal
+        - heading "Schedule Appointment" [level=1] [ref=e847]
+      - generic [ref=e848]:
+        - button "My Orders" [ref=e849]:
+          - img
+          - generic [ref=e850]: My Orders
+        - button "CA" [ref=e851]:
+          - generic [ref=e853]: CA
+  - main [ref=e854]:
+    - generic [ref=e855]:
+      - generic [ref=e856]:
+        - generic [ref=e858]:
+          - heading "Schedule Appointment" [level=1] [ref=e859]
+          - paragraph [ref=e860]: Select a date and time for your tuning session
+        - generic [ref=e861]:
+          - generic [ref=e862]: Step 06 / 07
+          - progressbar [ref=e864]
+      - generic [ref=e867]:
+        - generic [ref=e869]:
+          - img [ref=e871]
+          - heading "Service Scheduling" [level=3] [ref=e874]
+        - generic [ref=e1031]:
+          - generic [ref=e1032]:
+            - generic [ref=e1033]:
+              - generic [ref=e1034]:
+                - heading "April 2026" [level=3] [ref=e1160]
+                - generic [ref=e1036]:
+                  - button [ref=e1037]:
+                    - img
+                  - button [ref=e1038]:
+                    - img
+              - generic [ref=e1039]:
+                - generic [ref=e1040]: Mo
+                - generic [ref=e1041]: Tu
+                - generic [ref=e1042]: We
+                - generic [ref=e1043]: Th
+                - generic [ref=e1044]: Fr
+              - generic [ref=e1045]:
+                - button "1" [disabled] [ref=e1161]:
+                  - generic [ref=e1162]: "1"
+                - button "2" [disabled] [ref=e1163]:
+                  - generic [ref=e1164]: "2"
+                - button "3" [disabled] [ref=e1165]:
+                  - generic [ref=e1166]: "3"
+                - button "4" [disabled] [ref=e1167]:
+                  - generic [ref=e1168]: "4"
+                - button "5" [disabled] [ref=e1169]:
+                  - generic [ref=e1054]: "5"
+                - button "6" [disabled] [ref=e1170]:
+                  - generic [ref=e1057]: "6"
+                - button "7" [ref=e1171]:
+                  - generic [ref=e1060]: "7"
+                - button "8" [disabled] [ref=e1172]:
+                  - generic [ref=e1063]: "8"
+                - button "9" [disabled] [ref=e1173]:
+                  - generic [ref=e1066]: "9"
+                - button "10" [disabled] [ref=e1174]:
+                  - generic [ref=e1069]: "10"
+                - button "11" [disabled] [ref=e1175]:
+                  - generic [ref=e1072]: "11"
+                - button "12" [disabled] [ref=e1176]:
+                  - generic [ref=e1075]: "12"
+                - button "13" [disabled] [ref=e1177]:
+                  - generic [ref=e1078]: "13"
+                - button "14" [disabled] [ref=e1178]:
+                  - generic [ref=e1081]: "14"
+                - button "15" [disabled] [ref=e1179]:
+                  - generic [ref=e1084]: "15"
+                - button "16" [disabled] [ref=e1180]:
+                  - generic [ref=e1087]: "16"
+                - button "17" [disabled] [ref=e1181]:
+                  - generic [ref=e1090]: "17"
+                - button "18" [disabled] [ref=e1182]:
+                  - generic [ref=e1093]: "18"
+                - button "19" [disabled] [ref=e1183]:
+                  - generic [ref=e1096]: "19"
+                - button "20" [disabled] [ref=e1184]:
+                  - generic [ref=e1099]: "20"
+                - button "21" [disabled] [ref=e1185]:
+                  - generic [ref=e1102]: "21"
+                - button "22" [disabled] [ref=e1186]:
+                  - generic [ref=e1105]: "22"
+                - button "23" [disabled] [ref=e1187]:
+                  - generic [ref=e1108]: "23"
+                - button "24" [disabled] [ref=e1188]:
+                  - generic [ref=e1111]: "24"
+                - button "25" [disabled] [ref=e1189]:
+                  - generic [ref=e1114]: "25"
+                - button "26" [disabled] [ref=e1190]:
+                  - generic [ref=e1117]: "26"
+                - button "27" [disabled] [ref=e1191]:
+                  - generic [ref=e1120]: "27"
+                - button "28" [disabled] [ref=e1192]:
+                  - generic [ref=e1123]: "28"
+                - button "29" [disabled] [ref=e1193]:
+                  - generic [ref=e1126]: "29"
+                - button "30" [disabled] [ref=e1194]:
+                  - generic [ref=e1129]: "30"
+            - generic [ref=e1146]:
+              - generic [ref=e1147]:
+                - heading "Available Slots" [level=3] [ref=e1195]:
+                  - img [ref=e1196]
+                  - text: Available Slots
+                - generic [ref=e1199]: Tue, Apr 7, 2026
+              - generic [ref=e1203]:
+                - button "08:00 AM - 10:00 AM" [active] [ref=e1204] [cursor=pointer]
+                - button "11:00 AM - 01:00 PM" [ref=e1205]
+                - button "02:00 PM - 04:00 PM" [ref=e1206]
+          - generic [ref=e1156]:
+            - generic [ref=e1157]: "Selected: Tue, Apr 7, 2026 at 08:00 AM"
+            - button "Confirm Appointment" [ref=e1207]:
+              - text: Confirm Appointment
+              - img

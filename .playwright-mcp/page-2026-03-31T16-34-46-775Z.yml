@@ -1,0 +1,117 @@
+- generic [ref=e1658]:
+  - banner [ref=e1659]:
+    - generic [ref=e1660]:
+      - generic [ref=e1661]:
+        - generic [ref=e1662]: Portal
+        - heading "Schedule Appointment" [level=1] [ref=e1663]
+      - generic [ref=e1664]:
+        - button "My Orders" [ref=e1665]:
+          - img
+          - generic [ref=e1666]: My Orders
+        - button "CA" [ref=e1667]:
+          - generic [ref=e1669]: CA
+  - main [ref=e1670]:
+    - generic [ref=e1671]:
+      - generic [ref=e1672]:
+        - generic [ref=e1674]:
+          - heading "Schedule Appointment" [level=1] [ref=e1675]
+          - paragraph [ref=e1676]: Select a date and time for your tuning session
+        - generic [ref=e1677]:
+          - generic [ref=e1678]: Step 06 / 07
+          - progressbar [ref=e1680]
+      - generic [ref=e1683]:
+        - generic [ref=e1685]:
+          - img [ref=e1687]
+          - heading "Service Scheduling" [level=3] [ref=e1690]
+        - generic [ref=e1847]:
+          - generic [ref=e1848]:
+            - generic [ref=e1849]:
+              - generic [ref=e1850]:
+                - heading "March 2026" [level=3] [ref=e1851]
+                - generic [ref=e1852]:
+                  - button [ref=e1853]:
+                    - img
+                  - button [ref=e1854]:
+                    - img
+              - generic [ref=e1855]:
+                - generic [ref=e1856]: Mo
+                - generic [ref=e1857]: Tu
+                - generic [ref=e1858]: We
+                - generic [ref=e1859]: Th
+                - generic [ref=e1860]: Fr
+              - generic [ref=e1861]:
+                - button "1" [disabled] [ref=e1869]:
+                  - generic [ref=e1870]: "1"
+                - button "2" [disabled] [ref=e1872]:
+                  - generic [ref=e1873]: "2"
+                - button "3" [disabled] [ref=e1875]:
+                  - generic [ref=e1876]: "3"
+                - button "4" [disabled] [ref=e1878]:
+                  - generic [ref=e1879]: "4"
+                - button "5" [disabled] [ref=e1881]:
+                  - generic [ref=e1882]: "5"
+                - button "6" [disabled] [ref=e1884]:
+                  - generic [ref=e1885]: "6"
+                - button "7" [disabled] [ref=e1887]:
+                  - generic [ref=e1888]: "7"
+                - button "8" [disabled] [ref=e1890]:
+                  - generic [ref=e1891]: "8"
+                - button "9" [disabled] [ref=e1893]:
+                  - generic [ref=e1894]: "9"
+                - button "10" [disabled] [ref=e1896]:
+                  - generic [ref=e1897]: "10"
+                - button "11" [disabled] [ref=e1899]:
+                  - generic [ref=e1900]: "11"
+                - button "12" [disabled] [ref=e1902]:
+                  - generic [ref=e1903]: "12"
+                - button "13" [disabled] [ref=e1905]:
+                  - generic [ref=e1906]: "13"
+                - button "14" [disabled] [ref=e1908]:
+                  - generic [ref=e1909]: "14"
+                - button "15" [disabled] [ref=e1911]:
+                  - generic [ref=e1912]: "15"
+                - button "16" [disabled] [ref=e1914]:
+                  - generic [ref=e1915]: "16"
+                - button "17" [disabled] [ref=e1917]:
+                  - generic [ref=e1918]: "17"
+                - button "18" [disabled] [ref=e1920]:
+                  - generic [ref=e1921]: "18"
+                - button "19" [disabled] [ref=e1923]:
+                  - generic [ref=e1924]: "19"
+                - button "20" [disabled] [ref=e1926]:
+                  - generic [ref=e1927]: "20"
+                - button "21" [disabled] [ref=e1929]:
+                  - generic [ref=e1930]: "21"
+                - button "22" [disabled] [ref=e1932]:
+                  - generic [ref=e1933]: "22"
+                - button "23" [disabled] [ref=e1935]:
+                  - generic [ref=e1936]: "23"
+                - button "24" [disabled] [ref=e1938]:
+                  - generic [ref=e1939]: "24"
+                - button "25" [disabled] [ref=e1941]:
+                  - generic [ref=e1942]: "25"
+                - button "26" [disabled] [ref=e1944]:
+                  - generic [ref=e1945]: "26"
+                - button "27" [disabled] [ref=e1947]:
+                  - generic [ref=e1948]: "27"
+                - button "28" [disabled] [ref=e1950]:
+                  - generic [ref=e1951]: "28"
+                - button "29" [disabled] [ref=e1953]:
+                  - generic [ref=e1954]: "29"
+                - button "30" [disabled] [ref=e1956]:
+                  - generic [ref=e1957]: "30"
+                - button "31" [disabled] [ref=e1959]:
+                  - generic [ref=e1960]: "31"
+            - generic [ref=e1962]:
+              - heading "Select a Date" [level=3] [ref=e1964]
+              - generic [ref=e1965]:
+                - img [ref=e1967]
+                - generic [ref=e1969]:
+                  - paragraph [ref=e1970]: No date selected
+                  - paragraph [ref=e1971]: Please select an available date from the calendar to view time slots.
+          - generic [ref=e1972]:
+            - generic [ref=e1973]: "Onboarding Status: Awaiting Scheduling"
+            - generic [ref=e1975]:
+              - button "Confirm Appointment" [disabled]:
+                - text: Confirm Appointment
+                - img

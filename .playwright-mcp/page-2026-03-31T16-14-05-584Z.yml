@@ -1,0 +1,196 @@
+- generic [ref=e347]:
+  - banner [ref=e348]:
+    - generic [ref=e349]:
+      - generic [ref=e350]:
+        - generic [ref=e351]: Portal
+        - heading "Tuning Stage Selection" [level=1] [ref=e352]
+      - generic [ref=e353]:
+        - button "My Orders" [ref=e354]:
+          - img
+          - generic [ref=e355]: My Orders
+        - button "CA" [ref=e356]:
+          - generic [ref=e358]: CA
+  - main [ref=e359]:
+    - generic [ref=e360]:
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - button [ref=e363]:
+            - img
+          - generic [ref=e364]:
+            - heading "Performance Level" [level=1] [ref=e365]
+            - paragraph [ref=e366]: Select your preferred tuning package and performance tier
+        - generic [ref=e367]:
+          - generic [ref=e368]: Step 03 / 07
+          - progressbar [ref=e370]
+      - generic [ref=e372]:
+        - generic [ref=e373]:
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - heading "Vehicle Status" [level=3] [ref=e377]:
+                - img [ref=e378]
+                - text: Vehicle Status
+              - generic [ref=e382]:
+                - generic [ref=e383]:
+                  - paragraph [ref=e384]: VIN Identifier
+                  - paragraph [ref=e385]: WVWZZZCDZMW073483
+                - generic [ref=e386]:
+                  - generic [ref=e387]:
+                    - paragraph [ref=e388]: Make
+                    - paragraph [ref=e389]: Volkswagen
+                  - generic [ref=e390]:
+                    - paragraph [ref=e391]: Model
+                    - paragraph [ref=e392]: golf
+                  - generic [ref=e393]:
+                    - paragraph [ref=e394]: Year
+                    - paragraph [ref=e395]: "2021"
+                  - generic [ref=e396]:
+                    - paragraph [ref=e397]: Engine
+                    - paragraph [ref=e398]: DNFG
+            - generic [ref=e399]:
+              - heading "Selection Summary" [level=3] [ref=e401]:
+                - img [ref=e402]
+                - text: Selection Summary
+              - generic [ref=e405]:
+                - generic [ref=e406]:
+                  - text: Active Profile
+                  - paragraph [ref=e407]: Stage 1
+                - generic [ref=e408]:
+                  - generic [ref=e409]:
+                    - generic [ref=e410]: Base Tuning Cost
+                    - generic [ref=e411]: €499.00
+                  - generic [ref=e412]:
+                    - generic [ref=e413]: Tool Rental Fee (Authorization)
+                    - generic [ref=e414]: €500.00
+                  - generic [ref=e415]:
+                    - generic [ref=e416]: Compliance Tax (21%)
+                    - generic [ref=e417]: €104.79
+                  - generic [ref=e419]:
+                    - generic [ref=e420]: Order Total
+                    - generic [ref=e421]: €1103.79
+                - generic [ref=e422]:
+                  - img [ref=e423]
+                  - paragraph [ref=e425]: All power figures are approximate and subject to hardware verification.
+          - generic [ref=e426]:
+            - generic [ref=e427]:
+              - generic [ref=e428]:
+                - generic [ref=e429]:
+                  - generic [ref=e430]:
+                    - generic [ref=e431]: Std
+                    - generic [ref=e434]: FREE
+                  - generic [ref=e435]:
+                    - heading "Stock" [level=3] [ref=e436]
+                    - paragraph [ref=e437]: Original factory calibration profile.
+                - generic [ref=e439]: Select
+              - generic [ref=e441] [cursor=pointer]:
+                - generic [ref=e442]:
+                  - generic [ref=e443]:
+                    - generic [ref=e444]: Rec
+                    - generic [ref=e445]:
+                      - generic [ref=e446]:
+                        - generic [ref=e447]: €499
+                        - generic [ref=e448]: EUR
+                      - img [ref=e450]
+                  - generic [ref=e452]:
+                    - heading "Stage 1" [level=3] [ref=e453]
+                    - paragraph [ref=e454]: Optimized drivability and fuel economy.
+                - generic [ref=e456]: Active
+              - generic [ref=e458] [cursor=pointer]:
+                - generic [ref=e459]:
+                  - generic [ref=e460]:
+                    - generic [ref=e461]: Perf
+                    - generic [ref=e463]:
+                      - generic [ref=e464]: €799
+                      - generic [ref=e465]: EUR
+                  - generic [ref=e466]:
+                    - heading "Stage 2" [level=3] [ref=e467]
+                    - paragraph [ref=e468]: Maximum performance and durability.
+                - generic [ref=e470]: Select
+            - generic [ref=e472]:
+              - generic [ref=e473]:
+                - generic [ref=e475]:
+                  - img [ref=e477]
+                  - generic [ref=e481]:
+                    - heading "Improved Drivability" [level=3] [ref=e482]
+                    - paragraph [ref=e483]: Protocol Specs
+                - generic [ref=e484]:
+                  - generic [ref=e485] [cursor=pointer]:
+                    - img [ref=e487]
+                    - generic [ref=e491]:
+                      - heading "Improved Drivability" [level=4] [ref=e492]
+                      - paragraph [ref=e493]: 4 Active mods
+                  - generic [ref=e494] [cursor=pointer]:
+                    - img [ref=e496]
+                    - generic [ref=e498]:
+                      - heading "Longevity options" [level=4] [ref=e499]
+                      - paragraph [ref=e500]: 3 Active mods
+                  - generic [ref=e501] [cursor=pointer]:
+                    - img [ref=e503]
+                    - generic [ref=e505]:
+                      - heading "Performance options" [level=4] [ref=e506]
+                      - paragraph [ref=e507]: 12 Active mods
+                  - generic [ref=e508] [cursor=pointer]:
+                    - img [ref=e510]
+                    - generic [ref=e516]:
+                      - heading "Launch Control" [level=4] [ref=e517]
+                      - paragraph [ref=e518]: 4 Active mods
+                  - generic [ref=e519] [cursor=pointer]:
+                    - img [ref=e521]
+                    - generic [ref=e523]:
+                      - heading "Additional options" [level=4] [ref=e524]
+                      - paragraph [ref=e525]: 3 Active mods
+              - generic [ref=e526]:
+                - generic [ref=e527]:
+                  - generic [ref=e528]: Feature
+                  - generic [ref=e529]: Stock
+                  - generic [ref=e530]: Stage 1
+                  - generic [ref=e531]: Stage 2
+                - generic [ref=e533]:
+                  - generic [ref=e534]:
+                    - generic [ref=e535]: Optimized D Shift Program
+                    - img [ref=e537]
+                    - img [ref=e540]
+                    - img [ref=e543]
+                  - generic [ref=e545]:
+                    - generic [ref=e546]: Optimized S Shift Program
+                    - img [ref=e548]
+                    - img [ref=e551]
+                    - img [ref=e554]
+                  - generic [ref=e556]:
+                    - generic [ref=e557]: Optimized M Shift Program
+                    - img [ref=e559]
+                    - img [ref=e562]
+                    - img [ref=e565]
+                  - generic [ref=e567]:
+                    - generic [ref=e568]: Optimized Cruise Control Program
+                    - img [ref=e570]
+                    - img [ref=e573]
+                    - img [ref=e576]
+                - paragraph [ref=e579]: "Performance Protocol: Validated"
+            - generic [ref=e580]:
+              - generic [ref=e581]:
+                - img [ref=e583]
+                - generic [ref=e585]:
+                  - paragraph [ref=e586]: Tool Unlock Rental Fee
+                  - paragraph [ref=e587]: Professional Equipment
+                - generic [ref=e588]:
+                  - generic [ref=e589]: $500.00
+                  - generic [ref=e590]: USD
+              - generic [ref=e591]:
+                - generic [ref=e592]:
+                  - generic [ref=e593]: Rental period of 14 calendar days from delivery
+                  - generic [ref=e595]: Tool must be returned in original working condition
+                  - generic [ref=e597]: Any tampering with the tool will result in the full charge of the $500 USD fee
+                  - generic [ref=e599]: Security deposit may be required during the process
+                  - generic [ref=e601]: Return shipping label included in the package
+                - generic [ref=e603]:
+                  - checkbox "AUTHORIZE FEE" [checked] [active] [ref=e604] [cursor=pointer]:
+                    - generic:
+                      - img
+                  - generic [ref=e605]:
+                    - generic [ref=e606]: Authorize Fee
+                    - paragraph [ref=e607]: $500 held on card, released on return.
+        - generic [ref=e608]:
+          - generic [ref=e609]: "Status: Tier selection"
+          - button "Configure & continue" [ref=e612]:
+            - text: Configure & continue
+            - img

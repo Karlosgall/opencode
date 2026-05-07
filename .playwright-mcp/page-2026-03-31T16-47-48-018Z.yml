@@ -1,0 +1,77 @@
+- generic [ref=e2030]:
+  - banner [ref=e2031]:
+    - generic [ref=e2032]:
+      - generic [ref=e2033]:
+        - generic [ref=e2034]: Portal
+        - heading "Tuning Session" [level=1] [ref=e2035]
+      - generic [ref=e2036]:
+        - button "My Orders" [ref=e2037]:
+          - img
+          - generic [ref=e2038]: My Orders
+        - button "CA" [ref=e2039]:
+          - generic [ref=e2041]: CA
+  - main [ref=e2042]:
+    - generic [ref=e2043]:
+      - generic [ref=e2044]:
+        - generic [ref=e2046]:
+          - heading "Tuning Session" [level=1] [ref=e2047]
+          - paragraph [ref=e2048]: Final calibration and performance optimization
+        - generic [ref=e2049]:
+          - generic [ref=e2050]: Step 07 / 07
+          - progressbar [ref=e2052]
+      - generic [ref=e2054]:
+        - button "[DEV] Simulate Appointment Day" [ref=e2056]
+        - generic [ref=e2057]:
+          - generic [ref=e2059]:
+            - img [ref=e2061]
+            - heading "Performance Calibration" [level=3] [ref=e2065]
+          - generic [ref=e2067]:
+            - generic [ref=e2068]:
+              - img [ref=e2070]
+              - generic [ref=e2074]: Locked
+            - heading "Tuning Session Locked" [level=3] [ref=e2076]
+            - generic [ref=e2077]:
+              - generic [ref=e2078]:
+                - img [ref=e2079]
+                - paragraph [ref=e2082]: Box Unlock
+                - paragraph [ref=e2083]: Included
+              - generic [ref=e2084]:
+                - img [ref=e2085]
+                - paragraph [ref=e2087]: Reprogramming
+                - paragraph [ref=e2088]: Live
+              - generic [ref=e2089]:
+                - img [ref=e2090]
+                - paragraph [ref=e2093]: Duration
+                - paragraph [ref=e2094]: 2 Hours
+            - generic [ref=e2095]:
+              - generic [ref=e2096]:
+                - heading "Booking Details" [level=4] [ref=e2097]:
+                  - img [ref=e2098]
+                  - text: Booking Details
+                - generic [ref=e2100]: Confirmed
+              - generic [ref=e2101]:
+                - generic [ref=e2102]:
+                  - paragraph [ref=e2103]: Appointment
+                  - paragraph [ref=e2104]: Fri, Apr 24, 2026
+                  - paragraph [ref=e2105]: 2:00 PM - 4:00 PM
+                - generic [ref=e2106]:
+                  - paragraph [ref=e2107]: Tuning Stage
+                  - paragraph [ref=e2108]: stage1
+              - button "Reschedule Appointment" [ref=e2109]
+            - generic [ref=e2111]:
+              - generic [ref=e2114]:
+                - paragraph [ref=e2115]: Order Traceability
+                - paragraph [ref=e2116]: "Last checked: 11:47 a. m."
+              - generic [ref=e2117]:
+                - button "Refresh status" [ref=e2118]:
+                  - img
+                  - generic [ref=e2119]: Refresh status
+                - button "Toggle Stepper" [ref=e2120]:
+                  - img
+                  - generic [ref=e2121]: Toggle Stepper
+        - generic [ref=e2122]:
+          - generic [ref=e2123]: "Status: Waiting for service"
+          - generic [ref=e2125]:
+            - button "Complete Onboarding" [disabled]:
+              - text: Complete Onboarding
+              - img

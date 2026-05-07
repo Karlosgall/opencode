@@ -1,0 +1,55 @@
+- generic [ref=e220]:
+  - banner [ref=e221]:
+    - generic [ref=e222]:
+      - generic [ref=e223]:
+        - generic [ref=e224]: Portal
+        - heading "Vehicle Onboarding" [level=1] [ref=e225]
+      - generic [ref=e226]:
+        - button "My Orders" [ref=e227]:
+          - img
+          - generic [ref=e228]: My Orders
+        - button "CA" [ref=e229]:
+          - generic [ref=e231]: CA
+  - main [ref=e232]:
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - button [ref=e236]:
+            - img
+          - generic [ref=e237]:
+            - heading "Identify Vehicle" [level=1] [ref=e238]
+            - paragraph [ref=e239]: Automatic VIN extraction or manual entry
+        - generic [ref=e240]:
+          - generic [ref=e241]: Step 02 / 07
+          - progressbar [ref=e243]
+      - generic [ref=e245]:
+        - generic [ref=e247]:
+          - heading "Vehicle Identification" [level=3] [ref=e249]:
+            - img [ref=e250]
+            - text: Vehicle Identification
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - heading "Manual Entry" [level=3] [ref=e259]
+              - generic [ref=e260]:
+                - generic [ref=e261]: VIN
+                - generic [ref=e262]:
+                  - textbox "VIN" [ref=e263]:
+                    - /placeholder: Enter VIN (17 characters)
+                  - button [ref=e264]:
+                    - img
+            - generic [ref=e265]:
+              - heading "Automatic Extraction" [level=3] [ref=e268]
+              - generic [ref=e269] [cursor=pointer]:
+                - img [ref=e271]
+                - generic [ref=e274]:
+                  - paragraph [ref=e275]: Drop an image here
+                  - paragraph [ref=e276]: JPEG / PNG / WebP — Max 10MB
+              - button "Extract VIN" [disabled]:
+                - img
+                - text: Extract VIN
+        - generic [ref=e277]:
+          - generic [ref=e278]: "Status: Vehicle Identified"
+          - generic [ref=e280]:
+            - button "Continue" [disabled]:
+              - text: Continue
+              - img

@@ -1,0 +1,59 @@
+- generic [ref=e1658]:
+  - banner [ref=e1659]:
+    - generic [ref=e1660]:
+      - generic [ref=e1661]:
+        - generic [ref=e1662]: Portal
+        - heading "Schedule Appointment" [level=1] [ref=e1663]
+      - generic [ref=e1664]:
+        - button "My Orders" [ref=e1665]:
+          - img
+          - generic [ref=e1666]: My Orders
+        - button "CA" [ref=e1667]:
+          - generic [ref=e1669]: CA
+  - main [ref=e1670]:
+    - generic [ref=e1671]:
+      - generic [ref=e1672]:
+        - generic [ref=e1674]:
+          - heading "Schedule Appointment" [level=1] [ref=e1675]
+          - paragraph [ref=e1676]: Select a date and time for your tuning session
+        - generic [ref=e1677]:
+          - generic [ref=e1678]: Step 06 / 07
+          - progressbar [ref=e1680]
+      - generic [ref=e1683]:
+        - generic [ref=e1685]:
+          - img [ref=e1687]
+          - heading "Service Scheduling" [level=3] [ref=e1690]
+        - generic [ref=e1692]:
+          - generic [ref=e1693]:
+            - generic [ref=e1694]:
+              - img [ref=e1696]
+              - generic [ref=e1700]: Locked
+            - generic [ref=e1701]:
+              - heading "Appointment Booking Locked" [level=3] [ref=e1702]
+              - paragraph [ref=e1703]: This phase requires manual verification of your order and vehicle data by our engineering team. You will receive an email notification once your booking window becomes available.
+            - generic [ref=e1704]:
+              - generic [ref=e1705]:
+                - img [ref=e1706]
+                - paragraph [ref=e1709]: Processing Time
+                - paragraph [ref=e1710]: 24-48 Hours
+              - generic [ref=e1711]:
+                - img [ref=e1712]
+                - paragraph [ref=e1714]: Next Available
+                - paragraph [ref=e1715]: 2026-04-07
+            - generic [ref=e1717]:
+              - generic [ref=e1720]:
+                - paragraph [ref=e1721]: Order Traceability
+                - paragraph [ref=e1722]: "Last checked: 11:30 a. m."
+              - generic [ref=e1723]:
+                - button "Refresh status" [ref=e1724]:
+                  - img
+                  - generic [ref=e1725]: Refresh status
+                - button "Toggle Stepper" [ref=e1726]:
+                  - img
+                  - generic [ref=e1727]: Toggle Stepper
+          - generic [ref=e1728]:
+            - generic [ref=e1729]: "Status: Scheduling not available yet"
+            - generic [ref=e1731]:
+              - button "Continue" [disabled]:
+                - text: Continue
+                - img

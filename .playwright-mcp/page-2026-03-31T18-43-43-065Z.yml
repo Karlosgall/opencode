@@ -1,0 +1,102 @@
+- generic [ref=e598]:
+  - banner [ref=e599]:
+    - generic [ref=e600]:
+      - generic [ref=e601]:
+        - generic [ref=e602]: Portal
+        - heading "Subject Registration" [level=1] [ref=e603]
+      - generic [ref=e604]:
+        - button "My Orders" [ref=e605]:
+          - img
+          - generic [ref=e606]: My Orders
+        - button "CA" [ref=e607]:
+          - generic [ref=e609]: CA
+  - main [ref=e610]:
+    - generic [ref=e611]:
+      - generic [ref=e612]:
+        - generic [ref=e613]:
+          - button [ref=e614]:
+            - img
+          - generic [ref=e615]:
+            - heading "Your details" [level=1] [ref=e616]
+            - paragraph [ref=e617]: Enter your contact and address information
+        - generic [ref=e618]:
+          - generic [ref=e619]: Step 04 / 07
+          - progressbar [ref=e621]
+      - generic [ref=e623]:
+        - generic [ref=e624]:
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - heading "Your information" [level=3] [ref=e627]:
+                - img [ref=e628]
+                - text: Your information
+              - paragraph [ref=e631]: Your contact details for this service
+            - generic [ref=e633]:
+              - generic [ref=e634]:
+                - generic [ref=e635]: First Name
+                - textbox "First Name" [ref=e636]: Carlos
+              - generic [ref=e637]:
+                - generic [ref=e638]: Last Name
+                - textbox "Last Name" [ref=e639]: Gallego
+              - generic [ref=e640]:
+                - generic [ref=e641]: Email
+                - textbox "Email" [ref=e642]:
+                  - /placeholder: email@example.com
+                  - text: karlitosgallego123@gmail.com
+              - generic [ref=e643]:
+                - generic [ref=e644]: Phone
+                - textbox "Phone" [ref=e645]:
+                  - /placeholder: +1 (000) 000-0000
+                  - text: "573015363880"
+          - generic [ref=e646]:
+            - generic [ref=e647]:
+              - generic [ref=e648]:
+                - heading "Billing Address" [level=3] [ref=e649]:
+                  - img [ref=e650]
+                  - text: Billing Address
+                - paragraph [ref=e652]: Billing address
+              - generic [ref=e654]:
+                - generic [ref=e655]:
+                  - generic [ref=e656]: Street Address
+                  - textbox "Street address" [ref=e657]: "Calle 100 #45-30"
+                - generic [ref=e658]:
+                  - generic [ref=e659]:
+                    - generic [ref=e660]: City
+                    - textbox "City" [ref=e661]: Bogotá
+                  - generic [ref=e662]:
+                    - generic [ref=e663]: Postal Code
+                    - textbox "ZIP" [ref=e664]: "110311"
+                - generic [ref=e665]:
+                  - generic [ref=e666]: Country
+                  - combobox [ref=e667]:
+                    - generic [ref=e668]: Colombia
+                    - img [ref=e669]
+            - generic [ref=e671]:
+              - generic [ref=e672]:
+                - heading "Shipping Address" [level=3] [ref=e673]:
+                  - img [ref=e674]
+                  - text: Shipping Address
+                - paragraph [ref=e679]: Shipping address
+              - generic [ref=e681]:
+                - generic [ref=e682]:
+                  - generic [ref=e683]: Street Address
+                  - textbox "Street address" [ref=e684]: "Calle 100 #45-30"
+                - generic [ref=e685]:
+                  - generic [ref=e686]:
+                    - generic [ref=e687]: City
+                    - textbox "City" [ref=e688]: Bogotá
+                  - generic [ref=e689]:
+                    - generic [ref=e690]: Postal Code
+                    - textbox "ZIP" [ref=e691]: "110311"
+                - generic [ref=e692]:
+                  - generic [ref=e693]: Country
+                  - combobox [ref=e694]:
+                    - generic [ref=e695]: Colombia
+                    - img [ref=e696]
+          - generic [ref=e698]:
+            - checkbox "Shipping address is identical to billing address" [checked] [ref=e699] [cursor=pointer]
+            - generic [ref=e700] [cursor=pointer]: Shipping address is identical to billing address
+        - generic [ref=e701]:
+          - generic [ref=e702]: "Status: Ready to continue"
+          - button "Save and continue" [ref=e705]:
+            - text: Save and continue
+            - img
